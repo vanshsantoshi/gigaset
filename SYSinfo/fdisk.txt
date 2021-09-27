@@ -1,0 +1,46 @@
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/mmcblk0: 61071360 sectors, 1148M
+Logical sector size: 512
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 40 entries
+First usable sector is 34, last usable sector is 61071326
+
+Number  Start (sector)    End (sector)  Size Name
+     1          131072          294911 80.0M modem
+     2          294912          296959 1024K bluetooth
+     3          296960          297215  128K pmic
+     4          297216          297471  128K pmicbak
+     5          297472          297473  1024 limits
+     6          297474          299521 1024K DDR
+     7          299522          299777  128K sec
+     8          393216          393727  256K apdp
+     9          393728          394239  256K msadp
+    10          394240          394241  1024 dpo
+    11          524288          527359 1536K fsg
+    12          655360          655361  1024 fsc
+    13          655362          655377  8192 ssd
+    14          655378          658449 1536K modemst1
+    15          658450          661521 1536K modemst2
+    16          661522          663569 1024K sbl1
+    17          663570          665617 1024K sbl1bak
+    18          665618          665809 98304 sdi
+    19          665810          667857 1024K tz
+    20          667858          669905 1024K tzbak
+    21          669906          670905  500K rpm
+    22          670906          671905  500K rpmbak
+    23          671906          672929  512K hyp
+    24          672930          673953  512K hypbak
+    25          673954          740801 32.6M splash
+    26          786432          796671 5120K aboot
+    27          796672          806911 5120K abootbak
+    28          806912          937983 64.0M boot
+    29          937984         1069055 64.0M recovery
+    30         1069056         7360511 3072M system
+    31         7471104        10616831 1536M cache
+    32        10616832        10682367 32.0M persist
+    33        10682368        10684415 1024K misc
+    34        10684416        10685439  512K keystore
+    35        10747904        10747905  1024 devinfo
+    36        10878976        10879999  512K config
+    37        10880000        61071326 23.9G userdata

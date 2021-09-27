@@ -1,0 +1,3 @@
+Found a secondary file after the ramdisk image.  
+According to the spec (mkbootimg.h) this file can exist, but this script is not designed to deal with this scenario.
+

@@ -1,0 +1,668 @@
+__bionic_open_tzdata: couldn't find any tzdata when looking for localtime!
+__bionic_open_tzdata: couldn't find any tzdata when looking for GMT!
+__bionic_open_tzdata: couldn't find any tzdata when looking for posixrules!
+Starting TWRP 3.0.2-2 on Thu Jul 19 03:39:49 1973
+ (pid 350)
+BOARD_HAS_NO_REAL_SDCARD := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+TW_INCLUDE_CRYPTO := true
+I:TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:Got max brightness 255 from '/sys/class/leds/lcd-backlight/max_brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:LANG: en-US
+Starting the UI...Overlay graphics may work (mdssfb_90000), but not enabled. Use TW_TARGET_USES_QCOM_BSP := true to enable.
+setting DRM_FORMAT_RGB565 and GGL_PIXEL_FORMAT_RGB_565
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =   0   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =  16   .length =   8
+setting GGL_PIXEL_FORMAT_RGBA_8888
+double buffered
+framebuffer: 0 (1080 x 1920)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+minui: /sys/board_properties/virtualkeys.synaptics_dsx is 3 % 6
+minui: /sys/board_properties/virtualkeys.synaptics_dsx: ignoring unknown virtual key type 139
+minui: /sys/board_properties/virtualkeys.synaptics_dsx: ignoring unknown virtual key type 672
+=> Linking mtab
+Renaming regular /etc/recovery.fstab -> /etc/recovery.fstab.bak
+Moving /etc/twrp.fstab -> /etc/recovery.fstab
+=> Processing recovery.fstab
+I:Processing '/firmware'
+I:Processing '/boot'
+I:Processing '/recovery'
+I:Processing '/misc'
+I:Processing '/devinfo'
+I:Processing '/persist'
+I:Created '/persist' folder.
+I:Processing '/external_sd'
+I:Created '/external_sd' folder.
+I:Processing '/system'
+I:Processing '/data'
+I:Processing '/cache'
+I:Processing '/system_image'
+I:Processing '/devinfo_image'
+I:Processing '/persist_image'
+I:Created '/persist_image' folder.
+I:Processing '/usbstorage'
+I:Created '/usbstorage' folder.
+I:Unhandled mount flag: 'utf8'
+I:Using automatic handling for /data/media emulated storage device.
+I:Setting up '/data' as data/media emulated storage.
+I:Created '/sdcard' folder.
+I:mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/dc98ec08'
+I:Settings storage is '/data/media/0'
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:Decrypt adopted storage starting
+I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
+Updating partition details...
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Data backup size is 3027MB, free: 5480MB.
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+
+
+Partition Logs:
+/firmware | /dev/block/mmcblk0p1 | Size: 79MB Used: 71MB Free: 8MB Backup Size: 71MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent Mount_To_Decrypt 
+   Primary_Block_Device: /dev/block/mmcblk0p1
+   Display_Name: firmware
+   Storage_Name: firmware
+   Backup_Path: /firmware
+   Backup_Name: firmware
+   Backup_Display_Name: firmware
+   Storage_Path: /firmware
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   Mount_Options: ro
+
+/boot | /dev/block/mmcblk0p28 | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p28
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/recovery | /dev/block/mmcblk0p29 | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p29
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/misc | /dev/block/mmcblk0p33 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p33
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/devinfo | /dev/block/mmcblk0p35 | Size: 0MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p35
+   Display_Name: devinfo
+   Storage_Name: devinfo
+   Backup_Path: /devinfo
+   Backup_Name: devinfo
+   Backup_Display_Name: devinfo
+   Storage_Path: /devinfo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/persist | /dev/block/mmcblk0p32 | Size: 27MB Used: 0MB Free: 26MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p32
+   Display_Name: persist
+   Storage_Name: persist
+   Backup_Path: /persist
+   Backup_Name: persist
+   Backup_Display_Name: persist
+   Storage_Path: /persist
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/external_sd |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/mmcblk1p1
+   Alternate_Block_Device: /dev/block/mmcblk1
+   Display_Name: Micro SDcard
+   Storage_Name: Micro SDcard
+   Backup_Path: /external_sd
+   Backup_Name: external_sd
+   Backup_Display_Name: Micro SDcard
+   Storage_Path: /external_sd
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65537
+
+/system | /dev/block/mmcblk0p30 | Size: 2975MB Used: 771MB Free: 2204MB Backup Size: 771MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p30
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/data | /dev/block/mmcblk0p37 | Size: 23994MB Used: 3027MB Free: 5480MB Backup Size: 3027MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media/0
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p37
+   Length: -16384
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media/0
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65539
+
+/cache | /dev/block/mmcblk0p31 | Size: 1487MB Used: 2MB Free: 1485MB Backup Size: 2MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p31
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/system_image | /dev/block/mmcblk0p30 | Size: 3072MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p30
+   Display_Name: System Image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System Image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/devinfo_image | /dev/block/mmcblk0p35 | Size: 0MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p35
+   Display_Name: devinfo_image
+   Storage_Name: devinfo_image
+   Backup_Path: /devinfo_image
+   Backup_Name: devinfo_image
+   Backup_Display_Name: devinfo_image
+   Storage_Path: /devinfo_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/persist_image | /dev/block/mmcblk0p32 | Size: 27MB Used: 0MB Free: 26MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p32
+   Display_Name: persist_image
+   Storage_Name: persist_image
+   Backup_Path: /persist_image
+   Backup_Name: persist_image
+   Backup_Display_Name: persist_image
+   Storage_Path: /persist_image
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/usbstorage |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sda1
+   Alternate_Block_Device: /dev/block/sda
+   Display_Name: USB Storage
+   Storage_Name: USB Storage
+   Backup_Path: /usbstorage
+   Backup_Name: usbstorage
+   Backup_Display_Name: USB Storage
+   Storage_Path: /usbstorage
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/0/TWRP/BACKUPS/dc98ec08'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page installsu
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+Startup Commands: 
+mm.enable.smoothstreaming=true
+ro.cm.build.version.plat.rev=0
+ro.cm.build.version.plat.sdk=5
+ro.cm.device=oneplus2
+ro.cm.display.version=13.0-20160703-UNOFFICIAL-oneplus2
+ro.cm.version=13.0-20160703-UNOFFICIAL-oneplus2
+ro.cm.releasetype=UNOFFICIAL
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.sensors.gestures=true
+ro.qc.sdk.gestures.camera=false
+ro.sf.lcd_density=480
+ro.com.google.clientidbase=android-oneplus
+ro.com.android.dateformat=MM-dd-yyyy
+ro.com.android.dataroaming=false
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.frp.pst=/dev/block/bootdevice/by-name/config
+ro.gps.agps_provider=1
+ro.pip.gated=0
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+ro.boot.ftm=0
+ro.boot.mode=recovery
+ro.boot.baseband=msm
+ro.boot.hardware=qcom
+ro.boot.serialno=dc98ec08
+ro.boot.bootdevice=f9824900.sdhci
+ro.hdmi.enable=true
+ro.hdmi.device_type=4
+ro.twrp.boot=1
+ro.twrp.version=3.0.2-2
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.board.platform=msm8994
+ro.build.id=MMB29M
+ro.build.date=Sun Jul  3 19:12:55 EDT 2016
+ro.build.date.utc=1467587575
+ro.build.host=build
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=jenkins
+ro.build.expect.trustzone=TZ.BF.3.0.R1-00201
+ro.build.flavor=cm_oneplus2-eng
+ro.build.display.id=cm_oneplus2-eng 6.0.1 MMB29M 14bd04561a test-keys
+ro.build.product=ME
+ro.build.selinux=1
+ro.build.version.sdk=23
+ro.build.version.base_os=
+ro.build.version.release=6.0.1
+ro.build.version.codename=REL
+ro.build.version.incremental=14bd04561a
+ro.build.version.preview_sdk=0
+ro.build.version.all_codenames=REL
+ro.build.version.security_patch=2015-12-01
+ro.build.description=OnePlus2-user 6.0.1 MMB29M 31 dev-keys
+ro.build.fingerprint=OnePlus/OnePlus2/OnePlus2:6.0.1/MMB29M/1447840820:user/release-keys
+ro.build.characteristics=default
+ro.config.ringtone=Orion.ogg
+ro.config.alarm_alert=Helium.ogg
+ro.config.notification_sound=Argon.ogg
+ro.dalvik.vm.native.bridge=0
+ro.kernel.android.checkjni=1
+ro.secure=0
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.zygote=zygote64_32
+ro.carrier=unknown
+ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
+ro.gigaset.marketingname=Gigaset ME
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=arm64-v8a
+ro.product.name=ME
+ro.product.board=MSM8994
+ro.product.brand=Gigaset
+ro.product.model=GS55-6
+ro.product.device=ME
+ro.product.locale.region=US
+ro.product.locale.language=en
+ro.product.manufacturer=Gigaset
+ro.baseband=msm
+ro.bootmode=recovery
+ro.hardware=qcom
+ro.opengles.version=196609
+ro.qualcomm.cabl=0
+ro.revision=0
+ro.serialno=dc98ec08
+ro.bluetooth.a4wp=true
+ro.bluetooth.wipower=true
+ro.bootimage.build.date=Sun Jul 3 19:13:10 EDT 2016
+ro.bootimage.build.date.utc=1467587590
+ro.bootimage.build.fingerprint=OnePlus/cm_oneplus2/oneplus2:6.0.1/MMB29M/14bd04561a:eng/test-keys
+ro.alarm_boot=false
+ro.bootloader=unknown
+ro.debuggable=1
+ro.modversion=13.0-20160703-UNOFFICIAL-oneplus2
+ro.rommanager.developerid=cyanogenmod
+ro.factorytest=0
+ro.setupwizard.enterprise_mode=1
+dev.pm.dyn_samplingrate=1
+drm.service.enabled=true
+net.bt.name=Android
+net.change=net.bt.name
+ril.subscription.types=NV,RUIM
+sys.usb.ffs.ready=1
+use.voice.path.for.pcm.voip=true
+init.svc.adbd=running
+init.svc.healthd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.set_permissive=stopped
+qcom.hw.aac.encoder=true
+qcom.bluetooth.soc=rome
+rild.libargs=-d /dev/smd0
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+twrp.crash_counter=0
+twrp.action_complete=0
+audio.dolby.ds2.enabled=true
+audio.dolby.ds2.hardbypass=true
+audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.24bit.enable=true
+audio.offload.video=true
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
+audio.offload.multiple.enabled=true
+audio.offload.passthrough=false
+debug.sf.hw=1
+debug.egl.hw=1
+debug.atrace.tags.enableflags=0
+debug.mdpcomp.logs=0
+debug.composition.type=c2d
+media.sf.omx-plugin=libffmpeg_omx.so
+media.sf.extractor-plugin=libffmpeg_extractor.so
+media.aac_51_output_enabled=true
+camera.disable_zsl_mode=1
+dalvik.vm.isa.arm.variant=cortex-a53.a57
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.usejit=true
+dalvik.vm.heapsize=36m
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.dex2oat-filter=verify-at-runtime
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=verify-at-runtime
+tunnel.audio.encode=false
+persist.cne.feature=1
+persist.dpm.feature=7
+persist.env.fastdorm.enabled=true
+persist.gps.qc_nlp_in_use=1
+persist.hwc.ptor.enable=true
+persist.hwc.mdpcomp.enable=true
+persist.hwc.mdpcomp.maxpermixer=5
+persist.loc.nlp_name=com.qualcomm.location
+persist.sys.dun.override=0
+persist.sys.usb.config=adb
+persist.sys.dpmd.nsrm=3
+persist.sys.hdmi.addr.playback=4
+persist.sys.dalvik.vm.lib.2=libart.so
+persist.sys.root_access=0
+persist.sys.recovery_update=false
+persist.data.qmi.adb_logmask=0
+persist.demo.hdmirotationlock=false
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.spkr.cal.duration=0
+persist.audio.ssr.3mic=false
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.voicecall=true
+persist.radio.rat_on=combine
+persist.radio.multisim.config=dsds
+persist.radio.sib16_support=1
+persist.radio.sw_mbn_update=0
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.start_ota_daemon=1
+persist.timed.enable=true
+persist.camera.cpp.duplication=false
+persist.mdpcomp.4k2kSplit=1
+persist.speaker.prot.enable=false
+persist.metadata_dynfps.disable=true
+persist.mdpcomp_perfhint=50
+service.adb.root=1
+keyguard.no_require_sim=true
+bluetooth.hfp.client=1
+telephony.lteOnGsmDevice=1
+DEVICE_PROVISIONED=1
+
+I:Copying file /cache/recovery/log to /cache/recovery/last_log
+tw_get_context got selinux context: u:object_r:media_rw_data_file:s0
+I:Got default contexts and file mode for storage files.
+I:Attempt to load settings from settings file...
+I:InfoManager loading from '/data/media/0/TWRP/.twrps'.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/dc98ec08'
+I:Copying file /etc/recovery.fstab to /cache/recovery/recovery.fstab
+I:Version number saved to '/cache/recovery/.version'
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+__bionic_open_tzdata: couldn't find any tzdata when looking for PAKST-5:45PAKDT!
+__bionic_open_tzdata: couldn't find any tzdata when looking for posixrules!
+I:TWFunc::Set_Brightness: Setting brightness control to 196
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en-US.xml' directly
+E:Unable to load '/twres/languages/en-US.xml'
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/dc98ec08'
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1973-07-19--10-24-55
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: will attempt to use the ats files now.
+I:TWFunc::Fixup_Time: Setting time offset from file /data/time/ats_2, offset 1510563701564
+I:TWFunc::Fixup_Time: Date and time corrected: 2021-05-31--19-26-36
+I:Enabling MTP during startup
+I:Starting MTP
+I:sending message to add 65539 '/data/media/0' 'Internal Storage'
+Starting MTP
+I:Message sent, add storage ID: 65539
+MTP Enabled
+I:Check_Lifetime_Writes result: '105548'
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+created new mtpserver object
+MtpServer::run fd: 16
+mtppipe add storage 65539 '/data/media/0'
+MtpStorage id: 65539 path: /data/media/0
+I:Set page: 'install'
+I:Set page: 'flash_confirm'
+I:Set page: 'flash_zip'
+I:operation_start: 'Flashing'
+Installing zip file '/sdcard/Download/GS55-57_CM12_IRRemote.zip'
+Checking for MD5 file...
+Skipping MD5 check: no MD5 file found
+I:Zip does not contain SELinux file_contexts file in its root.
+I:Legacy property environment initialized.
+about to run program [/sbin/busybox] with 3 args
+--> CM12.1 Infrared app
+minzip: Extracted file "/system/app/GSInfrared/GSInfrared.apk"
+minzip: Extracted file "/system/etc/init.d/01infrared"
+about to run program [/sbin/busybox] with 3 args
+--> Done!
+script result was [--> Done!]
+I:Updater process ended with RC=0
+I:Legacy property environment disabled.
+Updating partition details...
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Data backup size is 3027MB, free: 5480MB.
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Set page: 'flash_done'
+I:operation_end - status=0
+I:Set page: 'rebootcheck'
+I:Switching packages (TWRP)
+I:Set page: 'installsu'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Copying file /cache/recovery/log to /cache/recovery/last_log
+Rebooting...
+I:InfoManager saving '/data/media/0/TWRP/.twrps'
+I:Saved settings file values

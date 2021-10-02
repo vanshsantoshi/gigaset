@@ -23,14 +23,14 @@ DEVICE_PATH := device/Gigaset/gigaset_me
 TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := E6833,E6853,E6883,satsuki,satsuki_dsds
+TARGET_OTA_ASSERT_DEVICE := gigaset_me
 
 # Boot image/kernel
-TARGET_KERNEL_CONFIG := GS55-6-7defconfig
+TARGET_KERNEL_CONFIG := gigaset-me_defconfig
 
 # Lineage hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+#BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+#TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -55,7 +55,7 @@ VENDOR_SECURITY_PATCH := 2017-09-01
 WIFI_BUS := PCIE
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_gigaset_me
+#TARGET_INIT_VENDOR_LIB := libinit_gigaset_me
 
 # Inherit from the proprietary version
 -include vendor/Gigaset/gigaset_me/BoardConfigVendor.mk

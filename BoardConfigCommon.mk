@@ -124,20 +124,20 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := false
 
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+#TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # FM radio
-BOARD_HAVE_BCM_FM := true
+#BOARD_HAVE_BCM_FM := true
 
 # BT/FM (Broadcom): Adjust the sysfs patch for 3.10 kernel
-BOARD_HAVE_BCM_FM_SYSFS := "/sys/bus/platform/drivers/bcm_ldisc/bcm_ldisc/"
-BOARD_BRCM_HCI_NUM := 26
+#BOARD_HAVE_BCM_FM_SYSFS := "/sys/bus/platform/drivers/bcm_ldisc/bcm_ldisc/"
+#BOARD_BRCM_HCI_NUM := 26
 
 # Partitions types
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -148,7 +148,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+#DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
@@ -172,8 +172,8 @@ TARGET_NO_RPC := true
 TARGET_PROVIDES_KEYMASTER := true
 
 # NFC
-NFC_NXP_CHIP_TYPE := PN547C2
-BOARD_NFC_CHIPSET := pn547
+#NFC_NXP_CHIP_TYPE := PN547C2
+#BOARD_NFC_CHIPSET := pn547
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
@@ -204,16 +204,30 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # WiFi
-BOARD_WLAN_DEVICE           := bcmdhd
+#BOARD_WLAN_DEVICE           := bcmdhd
+#BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+#BOARD_HOSTAPD_DRIVER        := NL80211
+#BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+#WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
+#WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin"
+#WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/wlan/qca_cld/WCNSS_qcom_wlan_nv.bin"
+#WPA_SUPPLICANT_VERSION      := VER_0_8_X
+#WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
+
+BOARD_WLAN_DEVICE := qcwcn
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER := NL80211
+WIFI_DRIVER_DEFAULT := qca_cld3
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WIFI_DRIVER_FW_PATH_AP  := "ap"
+WIFI_DRIVER_FW_PATH_P2P := "p2p"
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_HOSTAPD_DRIVER        := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin"
-WPA_SUPPLICANT_VERSION      := VER_0_8_X
-WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+WIFI_HIDL_FEATURE_AWARE := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit common blobs
 -include vendor/Gigaset/gigaset_me/BoardConfigVendor.mk

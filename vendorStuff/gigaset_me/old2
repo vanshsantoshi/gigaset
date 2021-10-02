@@ -352,7 +352,6 @@ vendor/Gigaset/gigaset_me/proprietary/vendor/lib64/hw/sensors.oem.so:system/vend
 vendor/Gigaset/gigaset_me/proprietary/vendor/lib/hw/sensors.oem.so:system/vendor/lib/hw/sensors.oem.so \
 vendor/Gigaset/gigaset_me/proprietary/vendor/lib/hw/sensors.msm8994.so:system/vendor/lib/hw/sensors.msm8994.so \
 vendor/Gigaset/gigaset_me/proprietary/vendor/lib/hw/sound_trigger.primary.msm8994.so:system/vendor/lib/hw/sound_trigger.primary.msm8994.so \
-vendor/Gigaset/gigaset_me/proprietary/lib64/libaudioroute.so:system/lib64/libaudioroute.so \
 vendor/Gigaset/gigaset_me/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
 vendor/Gigaset/gigaset_me/proprietary/lib64/hw/audio.primary.msm8994.so:system/lib64/hw/audio.primary.msm8994.so \
 vendor/Gigaset/gigaset_me/proprietary/lib64/libtfa9890.so:system/lib64/libtfa9890.so \

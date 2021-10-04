@@ -43,8 +43,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/clearpad.idc:system/usr/idc/clearpad.idc
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/idc/clearpad.idc:system/usr/idc/clearpad.idc
 
 # IRSC
 PRODUCT_COPY_FILES += \

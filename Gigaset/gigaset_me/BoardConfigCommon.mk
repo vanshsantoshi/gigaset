@@ -83,10 +83,10 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
-BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/vnd_generic.txt
-BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+#BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/vnd_generic.txt
+#BOARD_HAVE_BLUETOOTH := true
+#BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Camera
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -191,13 +191,13 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Shims
-TARGET_LD_SHIM_LIBS := \
-     /system/vendor/lib/hw/camera.vendor.msm8994.so|/system/vendor/lib/camera.qcom_shim.so \
-     /system/lib64/libsys-utils.so|libsensor.so \
-     /system/lib/libcammw.so|libsensor.so \
-     /system/vendor/lib/libizat_core.so|/system/vendor/lib/libshim_gps.so \
-     /system/vendor/lib64/libizat_core.so|/system/vendor/lib64/libshim_gps.so \
-     /system/bin/secd|/system/lib64/lib-preload64.so
+#TARGET_LD_SHIM_LIBS := \
+#     /system/vendor/lib/hw/camera.vendor.msm8994.so|/system/vendor/lib/camera.qcom_shim.so \
+#     /system/lib64/libsys-utils.so|libsensor.so \
+#     /system/lib/libcammw.so|libsensor.so \
+#     /system/vendor/lib/libizat_core.so|/system/vendor/lib/libshim_gps.so \
+#     /system/vendor/lib64/libizat_core.so|/system/vendor/lib64/libshim_gps.so \
+#     /system/bin/secd|/system/lib64/lib-preload64.so
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk

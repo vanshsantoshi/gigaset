@@ -104,8 +104,8 @@ PRODUCT_COPY_FILES += \
 #    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # Bluetooth ----- DOES NOT WORK
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
@@ -254,8 +254,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
 
 # Public Libraries ------DOES NOT WORK
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Recovery ---- WEIRD
 #PRODUCT_PACKAGES += \

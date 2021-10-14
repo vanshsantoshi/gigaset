@@ -35,8 +35,8 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # init
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/rootdir/bin/init.qcom.power.sh:system/bin/init.qcom.power.sh
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.qcom.power.sh:system/bin/init.qcom.power.sh
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
